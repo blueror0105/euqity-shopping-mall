@@ -1,0 +1,16 @@
+.review-card {
+  border-radius:15px;
+  background-color: lightgray;
+
+  &__profile {
+    display: flex;
+  }
+
+  &__profile-image {
+    border: 50%;
+  }
+
+  &__person-info {
+
+  }
+}

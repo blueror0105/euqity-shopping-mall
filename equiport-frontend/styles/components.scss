@@ -1,0 +1,84 @@
+/*------------------------------------------------------*/
+/* Layouts
+/*------------------------------------------------------*/
+@import '../Components/Layout/Navbar/Navbar.scss';
+
+@import '../Components/Layout/Navbar/DesktopNavbar/TopNavbar/TopNavbar.scss';
+@import '../Components/Layout/Navbar/DesktopNavbar/BottomNavbar/BottomNavbar.scss';
+@import '../Components/Layout/Footer/Footer.scss';
+@import '../Components/Layout/Navbar/Announcements/Annoucements.scss';
+
+@import '../Components/Layout/Navbar/MobileNavbar/MobileNavbar.scss';
+
+/*------------------------------------------------------*/
+/* Selects
+/*------------------------------------------------------*/
+@import '../Components/Selects/LanguageSwitcher/LanguageSwitcher.scss';
+@import '../Components/Selects/LocationSwitcher/LocationSwitcher.scss';
+@import '../Components/Selects/CategorySelect/CategorySelect.scss';
+
+/*------------------------------------------------------*/
+/* Inputs
+/*------------------------------------------------------*/
+@import '../Components/Inputs/ProductSearchBar/ProductSearchBar.scss';
+
+/*------------------------------------------------------*/
+/* Buttons
+/*------------------------------------------------------*/
+@import '../Components/Buttons/LoginSignupButton/LoginSignupButton.scss';
+@import '../Components/Buttons/ShopNowButton/ShopNowButton.scss';
+@import '../Components/Buttons/LanguageButton/LanguageButton.scss';
+@import '../Components/Buttons/AddToCartButton/AddToCartButton.scss';
+@import '../Components/Buttons/RoundButton/RoundButton.scss';
+
+/*------------------------------------------------------*/
+/* Modal
+/*------------------------------------------------------*/
+@import '../Components/Modal/Modal.scss';
+
+/*------------------------------------------------------*/
+/* Carousel
+/*------------------------------------------------------*/
+@import '../Components/Carousels/QuadCarousel/QuadCarousel.scss';
+
+/*------------------------------------------------------*/
+/* Cards
+/*------------------------------------------------------*/
+@import '../Components/Cards/product-card/product-card.scss';
+@import '../Components/Cards/reviewCard/ReviewCard.scss';
+@import '../Components/Cards/ProductCategoryCard/ProductCategoryCard.scss';
+
+/*------------------------------------------------------*/
+/* Dropdown
+/*------------------------------------------------------*/
+@import '../Components/Dropdowns/BasicDropdown/BasicDropdown.scss';
+
+/*------------------------------------------------------*/
+/* Sidebars
+/*------------------------------------------------------*/
+@import '../Components/Sidebars/MobileNavSidebar/MobileNavSidebar.scss';
+@import '../Components/Sidebars/CartSidebar/CartSidebar.scss';
+
+/*------------------------------------------------------*/
+/* Products
+/*------------------------------------------------------*/
+@import '../Components/Products/ProductImages/ProductImages.scss';
+@import '../Components/Products/AddToCartSection/AddToCartSection.scss';
+@import '../Components/Products/DescriptionProduct/DescriptionProduct.scss';
+
+
+/*------------------------------------------------------*/
+/* Overlays
+/*------------------------------------------------------*/
+@import '../Components/Overlays/NormalOverlays/NormalOverlays.scss';
+// @import '../pages//Components/Buy/AddToCart/AddToCart.scss';
+// @import '../pages/Components/Buy/BuyCarousel/BuyCarousel.scss';
+// @import '../pages/Components/Buy/DescriptionSection/DescriptionSection.scss';
+// @import '../pages/Components/Buy/TitleSection/TitleSection.module.scss';
+// @import '../pages/Components/Cards/CategoryCard/CategoryCard.scss';
+// @import '../pages/Components/Cards/ProductCard/ProductCard.scss';
+// @import '../pages/Components/ErrorBoundary/ErrorBoundary.scss';
+// @import '../pages/Components/QuadCarousel/QuadCarousel.scss';
+// @import '../pages/Components/Layout/Footer/Footer.scss';
+// @import '../pages/Components/Layout/Navbar/DesktopNavbar/BottomNavbar/BottomNavbar.scss';
+// @import '../pages/Components/Layout/Footer/Footer.scss';

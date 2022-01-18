@@ -1,0 +1,23 @@
+.basic-dropdown-list {
+  background-color: white;
+  border: 1px solid gray;
+  animation: 1s ease-in-out 1 slideInFromTop
+}
+
+.list-title {
+  font-size: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.list-item {
+  border-bottom: 1px solid gray;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

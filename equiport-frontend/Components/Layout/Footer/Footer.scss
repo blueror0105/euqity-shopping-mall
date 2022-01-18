@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  color:white;
+  background-color: black;
+  padding: 1rem;
+
+  &__first-section {
+    display: flex;
+  }
+
+
+  &__about-us {
+    width: 15%;
+    margin-right: 2rem;
+  }
+
+  &__information {
+    width: 20%;
+  }
+
+  &__work-with-us {
+    width: 20%;
+  }
+
+  &__newsletter {
+    margin-left: auto;
+    margin-right: 0rem;
+
+    &__input {
+
+    }
+  }
+}

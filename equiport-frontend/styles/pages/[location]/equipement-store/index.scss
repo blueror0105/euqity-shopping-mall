@@ -1,0 +1,13 @@
+.equipement-store {
+
+  &__categories-and-items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  &__products-cards {
+    display: flex;
+  }
+
+}
