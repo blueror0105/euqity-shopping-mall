@@ -2,6 +2,7 @@
   "name": "equiport-update-server",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "@shopify/shopify-api": "^2.0.0",
@@ -32,6 +33,7 @@
     "mime-types": "^2.1.34",
     "ms": "^2.1.3",
     "node-fetch": "^2.6.6",
+    "pg": "^8.7.1",
     "safe-buffer": "^5.2.1",
     "semver": "^5.7.1",
     "tr46": "^0.0.3",
