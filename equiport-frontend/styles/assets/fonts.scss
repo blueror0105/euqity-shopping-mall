@@ -1,53 +1,81 @@
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-ExtraLight.ttf)
+  src: url(../../Assets/Fonts/Roboto/Roboto-ThinItalic.ttf)
     format('truetype');
-  font-weight: ExtraLight;
+  font-weight: thin;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto-thin-normal';
+  src: url(../../Assets/Fonts/Roboto/Roboto-Thin.ttf)
+    format('truetype');
+  font-weight: thin;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-normal-normal';
+  src: url(../../Assets/Fonts/Roboto/Roboto-Regular.ttf)
+    format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-ExtraBoldItalic.ttf)
+  src: url(../../Assets/Fonts/Roboto/Roboto-MediumItalic.ttf)
     format('truetype');
-  font-weight: Bold;
+  font-weight: medium;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-ExtraBold.ttf)
-    format('truetype');
-  font-weight: ExtraBold;
+  src: url(../../Assets/Fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+  font-weight: medium;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-BoldItalic.ttf)
+  src: url(../../Assets/Fonts/Roboto/Roboto-LightItalic.ttf)
     format('truetype');
-  font-weight: Bold;
+  font-weight: light;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-Bold.ttf) format('truetype');
-  font-weight: Bold;
+  src: url(../../Assets/Fonts/Roboto/Roboto-Light.ttf) format('truetype');
+  font-weight: light;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-BlackItalic.ttf)
-    format('truetype');
-  font-weight: Black;
+  src: url(../../Assets/Fonts/Roboto/Roboto-BoldItalic.ttf) format('truetype');
+  font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../Assets/Fonts/NunitoSans/NunitoSans-Black.ttf) format('truetype');
-  font-weight: Black;
+  src: url(../../Assets/Fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../Assets/Fonts/Roboto/Roboto-BlackItalic.ttf) format('truetype');
+  font-weight: black;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../Assets/Fonts/Roboto/Roboto-Black.ttf) format('truetype');
+  font-weight: black;
   font-style: normal;
 }

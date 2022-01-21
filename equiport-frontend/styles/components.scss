@@ -30,6 +30,8 @@
 @import '../Components/Buttons/LanguageButton/LanguageButton.scss';
 @import '../Components/Buttons/AddToCartButton/AddToCartButton.scss';
 @import '../Components/Buttons/RoundButton/RoundButton.scss';
+@import '../Components/Buttons/StarsRating/StarsRating.scss';
+@import '../Components/Buttons/TalkWithUsButton/TalkWithUsButton.scss';
 
 /*------------------------------------------------------*/
 /* Modal
@@ -40,6 +42,7 @@
 /* Carousel
 /*------------------------------------------------------*/
 @import '../Components/Carousels/QuadCarousel/QuadCarousel.scss';
+@import '../Components/Carousels/Arrows/Arrows.scss';
 
 /*------------------------------------------------------*/
 /* Cards
@@ -71,14 +74,3 @@
 /* Overlays
 /*------------------------------------------------------*/
 @import '../Components/Overlays/NormalOverlays/NormalOverlays.scss';
-// @import '../pages//Components/Buy/AddToCart/AddToCart.scss';
-// @import '../pages/Components/Buy/BuyCarousel/BuyCarousel.scss';
-// @import '../pages/Components/Buy/DescriptionSection/DescriptionSection.scss';
-// @import '../pages/Components/Buy/TitleSection/TitleSection.module.scss';
-// @import '../pages/Components/Cards/CategoryCard/CategoryCard.scss';
-// @import '../pages/Components/Cards/ProductCard/ProductCard.scss';
-// @import '../pages/Components/ErrorBoundary/ErrorBoundary.scss';
-// @import '../pages/Components/QuadCarousel/QuadCarousel.scss';
-// @import '../pages/Components/Layout/Footer/Footer.scss';
-// @import '../pages/Components/Layout/Navbar/DesktopNavbar/BottomNavbar/BottomNavbar.scss';
-// @import '../pages/Components/Layout/Footer/Footer.scss';

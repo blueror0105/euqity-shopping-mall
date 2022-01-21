@@ -7,17 +7,21 @@
     background-color: red;
     padding: 1rem;
     height: 100%;
-    width: 50%;
+    width: 45%;
+    margin: 0.5rem;
   }
 
   &__right-section {
-    width: 50%;
+    width: 45%;
     height: 100%;
   }
 
   &__second-slider {
     background-color: green;
+    margin: 1.5%;
     padding: 1rem;
+    margin: 0.5rem;
+    height: 19rem; // deducting the height for the second slider
   }
 
   &__images {
@@ -26,13 +30,15 @@
 
   &__third-image {
     width: 75%;
-    height: 9rem;
+    height: 10rem;
     background-color: yellow;
+    margin: 0.5rem;
   }
 
   &__fourth-image {
     width: 75%;
-    height: 9rem;
+    height: 10rem;
     background-color: purple;
+    margin: 0.5rem;
   }
 }

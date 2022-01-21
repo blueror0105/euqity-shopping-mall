@@ -30,13 +30,13 @@ export default function QuadCarousel(props: IQuadCarouselProps) {
         <div className="quad-carousel__second-slider">
           <Slider {...settings}>
             <div>
-              <img src={"https://via.placeholder.com/300"} />
+              <img src={"https://via.placeholder.com/200"} />
             </div>
             <div>
-              <img src={"https://via.placeholder.com/300"} />
+              <img src={"https://via.placeholder.com/200"} />
             </div>
             <div>
-              <img src={"https://via.placeholder.com/300"} />
+              <img src={"https://via.placeholder.com/200"} />
             </div>
           </Slider>
         </div>

@@ -1,18 +1,18 @@
 import * as React from "react";
 
 export interface IProductTypeCardProps {
-  productType: string;
-  // productTypeBackgroundImage: string;
+  name: string;
+  backgroundImage: string;
 }
 
 export default function ProductTypeCard(props: IProductTypeCardProps) {
-  const { productType } = props;
+  const { name, backgroundImage } = props;
   return (
     <div
       className="product-type-card"
-      // style={{ backgroundImage: `url(${productTypeBackgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="product-type-card__title">{productType}</div>
+      <div className="product-type-card__title">{name}</div>
     </div>
   );
 }

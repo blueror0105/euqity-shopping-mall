@@ -1,4 +1,10 @@
 .equipement-store {
+  padding-top: 2rem;
+
+  &__title {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
 
   &__categories-and-items {
     display: flex;

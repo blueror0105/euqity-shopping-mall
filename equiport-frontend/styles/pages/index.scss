@@ -26,6 +26,7 @@
   height: 3rem;
   display: flex;
   place-items: center;
+  background-color: lightgray;
 
   &__wrap {
     margin: 0 auto;
@@ -40,24 +41,59 @@
   }
 }
 
+.delivery-section {
+  margin-top: 3rem;
+  display: flex;
+
+  &__left {
+    padding-top: 4rem;
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+  }
+
+  &__text {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__sub-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+  }
+}
+
 .reviews-section {
   height: 30rem;
   text-align: center;
   margin-top: 4rem;
-  display: flex;
 
-  &__right-section {
-    width: 30%;
-    text-align: left;
+
+  &__reviews {
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  &__title {
-    font-size: 2.5rem;
-    color: black;
-  }
 }
 
 .get-it-done {
-  height: 20rem;
+  height: 17rem;
   text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }

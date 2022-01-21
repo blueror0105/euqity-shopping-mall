@@ -1,12 +1,44 @@
 const productTypes = [
-  "Test product",
-  "Test product",
-  "Test product",
-  "Test product",
-  "Test product",
-  "Test product",
-  "Test product",
-  "Test product",
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
+  {
+    name: "shelter",
+    bacgroundImage:
+      "https://cdn.renorun.com/categories/Insulation.png?width=248",
+  },
 ];
 
 export default productTypes;
