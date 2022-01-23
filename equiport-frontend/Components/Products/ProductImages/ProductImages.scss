@@ -1,0 +1,27 @@
+.product-images {
+  height: 40rem;
+  background-color: red;
+
+  &__selected {
+    width: 100%;
+    background-color: blue;
+    height: 30rem;
+  }
+
+  &__slide {
+    width: 10rem;
+    height: 10rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+  &__dummy {
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+  }
+}

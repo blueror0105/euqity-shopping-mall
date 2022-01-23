@@ -14,20 +14,41 @@
 .login {
   border-right: 1px solid lightgray;
   padding: 2rem;
-  &__username {
+  width: 25rem;
+
+  &__email {
+    width: 10rem;
   }
 
   &__password {
+    width: 10rem;
   }
 }
 
 .signup {
   padding: 2rem;
-  &__first-name {
 
+  &__first-section {
+    display: flex;
+  }
+
+  &__second-section {
+    display: flex;
+  }
+
+  &__first-name {
+    width: 10rem;
   }
 
   &__last-name {
+    width: 10rem;
+  }
 
+  &__email {
+    width: 10rem;
+  }
+
+  &__password {
+    width: 10rem;
   }
 }

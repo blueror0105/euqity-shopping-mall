@@ -7,29 +7,50 @@ export interface IProductImagesProps {
 
 export default function ProductImages(props: IProductImagesProps) {
   const { images } = props;
-  const [currentImage, setCurrentImage] = useState("");
+  const [currentImage, setCurrentImage] = useState(1);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
-  const handleClick = (selectedImage: any) => {
-    setCurrentImage(selectedImage);
-  };
   return (
-    <div>
+    <div className="product-images">
+      <div className="product-images__selected">{currentImage}</div>
       <Slider {...settings}>
-        <div>
-          <img src={"https://via.placeholder.com/300"} />
+        <div className="product-images__slide">
+          <div
+            onClick={() => setCurrentImage(1)}
+            className="product-images__dummy"
+          >
+            1
+          </div>
         </div>
-        <div>
-          <img src={"https://via.placeholder.com/300"} />
+        <div className="product-images__slide">
+          <div
+            onClick={() => setCurrentImage(2)}
+            className="product-images__dummy"
+          >
+            2
+          </div>
         </div>
-        <div>
-          <img src={"https://via.placeholder.com/300"} />
+        <div className="product-images__slide">
+          <div
+            onClick={() => setCurrentImage(3)}
+            className="product-images__dummy"
+          >
+            3
+          </div>
+        </div>
+        <div className="product-images__slide">
+          <div
+            onClick={() => setCurrentImage(4)}
+            className="product-images__dummy"
+          >
+            4
+          </div>
         </div>
       </Slider>
     </div>

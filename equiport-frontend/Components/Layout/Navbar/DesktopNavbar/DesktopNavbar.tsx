@@ -6,9 +6,9 @@ export interface IDesktopNavbarProps {}
 
 export default function DesktopNavbar(props: IDesktopNavbarProps) {
   return (
-    <div>
+    <nav>
       <TopNavbar />
       <BottomNavbar />
-    </div>
+    </nav>
   );
 }

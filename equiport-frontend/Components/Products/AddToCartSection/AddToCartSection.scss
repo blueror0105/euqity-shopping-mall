@@ -1,3 +1,28 @@
-.add-to-cart-button {
+.add-to-cart {
+  padding: 2rem;
+
+  &__product-name {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__quantity {
+    display: flex;
+  }
+
+  &__rating-wrap {
+    display: flex;
+  }
+
+  &__rating {
+    margin-right: 0.5rem;
+  }
+
+  &__question {
+    margin-left: 0.5rem;
+  }
+
+  &__rating-wrap {
+  }
 
 }

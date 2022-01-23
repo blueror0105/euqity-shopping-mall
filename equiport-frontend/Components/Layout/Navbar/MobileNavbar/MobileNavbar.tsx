@@ -38,7 +38,7 @@ export default function TabletNavbar(props: ITabletNavbarProps) {
 
   return (
     <>
-      <div className="mobile-navbar">
+      <nav className="mobile-navbar">
         <div className="mobile-navbar__left-side-wrap">
           <RoundButton
             onClick={() => {
@@ -97,7 +97,7 @@ export default function TabletNavbar(props: ITabletNavbarProps) {
             <LanguageButton />
           </div>
         </div>
-      </div>
+      </nav>
       <div
         className={
           searchIsOpen
