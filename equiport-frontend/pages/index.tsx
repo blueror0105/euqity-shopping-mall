@@ -132,7 +132,12 @@ Access your dedicated account manager at all times`}
           <TalkWithUsButton />
         </div>
         <div className="delivery-section__right">
-          <Image src={deliveryImage} alt={"delivery truck"} />
+          <Image
+            src={deliveryImage}
+            width={"500"}
+            height={"400"}
+            alt={"delivery truck"}
+          />
         </div>
       </section>
       <section className="reviews-section">

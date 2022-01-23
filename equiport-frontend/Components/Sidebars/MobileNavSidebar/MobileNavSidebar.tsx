@@ -2,6 +2,7 @@ import * as React from "react";
 import MobileNavSidebarItem from "./MobileNavSidebarItem/MobileNavSidebarItem";
 import MobileNavSidebarSmallItem from "./MobileNavSidebarSmallItem/MobileNavSidebarSmallItem";
 import LoginSignup from "../../Buttons/LoginSignupButton/LoginSignupButton";
+import NormalOverlays from "../../Overlays/NormalOverlays/NormalOverlays";
 export interface IMobileNavSidebarProps {
   showMobileNav: boolean;
   onClose: () => void;
@@ -15,7 +16,7 @@ export default function MobileNavSidebar(props: IMobileNavSidebarProps) {
 
   return (
     <>
-      <div className={showMobileNav ? "overlay" : "no-overlay"} />
+      <NormalOverlays show={showMobileNav} />
       <div
         className={
           showMobileNav ? "mobile-nav-sidebar" : "unshow-mobile-nav-sidebar"

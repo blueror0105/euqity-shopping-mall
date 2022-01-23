@@ -5,13 +5,18 @@
   padding: 1rem;
   font-family: 'roboto-normal-normal';
 
+  &__description {
+
+  }
+
   &__first-section {
     display: flex;
   }
 
-  & > li {
+  ul > li {
     margin-top: 1rem;
     margin-bottom: 1rem;
+
   }
 
   &__about-us {

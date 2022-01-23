@@ -11,16 +11,16 @@ export default function QuantityButton(props: IQuantityButtonProps) {
 
   return (
     <div className="quantity-button">
-      <button className="quantity-button__add" onClick={() => {}}>
-        +
+      <button className="quantity-button__remove" onClick={() => {}}>
+        -
       </button>
       <input
         className="quantity-button__input"
         value={quantity}
         onChange={e => setManualQuantity(e)}
       />
-      <button className="quantity-button__remove" onClick={() => {}}>
-        -
+      <button className="quantity-button__add" onClick={() => {}}>
+        +
       </button>
     </div>
   );

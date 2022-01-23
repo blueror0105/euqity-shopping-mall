@@ -22,7 +22,9 @@ export default function QuadCarousel(props: IQuadCarouselProps) {
 
   const getFirstSlideItems = () => {
     return firstSlideItems.map(item => {
-      return <Image key={item.alt} src={item.url} alt={item.alt} />;
+      return (
+        <Image layout="fill" key={item.alt} src={item.url} alt={item.alt} />
+      );
     });
   };
   const FirstSlides = getFirstSlideItems();
@@ -38,7 +40,9 @@ export default function QuadCarousel(props: IQuadCarouselProps) {
 
   const getSecondSlideItems = () => {
     return firstSlideItems.map(item => {
-      return <Image key={item.alt} src={item.url} alt={item.alt} />;
+      return (
+        <Image key={item.alt} layout="fill" src={item.url} alt={item.alt} />
+      );
     });
   };
   const SecondeSlides = getSecondSlideItems();

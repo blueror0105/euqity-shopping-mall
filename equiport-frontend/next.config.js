@@ -5,4 +5,7 @@ module.exports = {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },
+  images: {
+    domains: ['via.placeholder.com']
+  }
 }

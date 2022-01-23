@@ -12,7 +12,7 @@ function Footer(props: any) {
             width={500}
             height={500}
           /> */}
-          <div>
+          <div className="footer__description">
             Founded in 2007, Bestland Canada Industrial has become a trusted
             name in the automotive, agricultural, and industrial sectors.
           </div>

@@ -2,6 +2,7 @@ import * as React from "react";
 import ProductInCart from "../../Cards/ProductsInCartCard/ProductInCartCard";
 import { RootState } from "../../../Store/redux/store";
 import { useSelector, useDispatch } from "react-redux";
+import NormalOverlays from "../../Overlays/NormalOverlays/NormalOverlays";
 
 export interface ICartSidebarProps {
   showCartSidebar: boolean;
@@ -19,7 +20,7 @@ export default function CartSidebar(props: ICartSidebarProps) {
   };
   return (
     <>
-      <div className={showCartSidebar ? "overlay" : "no-overlay"} />
+      <NormalOverlays show={showCartSidebar} />
       <div className={showCartSidebar ? "cart-sidebar" : "unshow-cart-sidebar"}>
         <div className="cart-sidebar__top-wrap">
           <div className="cart-sidebar__title">What is in your cart</div>
