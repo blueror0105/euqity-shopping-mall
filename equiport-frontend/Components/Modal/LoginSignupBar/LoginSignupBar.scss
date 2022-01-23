@@ -1,0 +1,33 @@
+.loginSignup {
+  height: 30rem;;
+  width: 50rem;
+  display: flex;
+  place-items: center;
+  padding: 1rem;
+
+  &__content-wrap {
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.login {
+  border-right: 1px solid lightgray;
+  padding: 2rem;
+  &__username {
+  }
+
+  &__password {
+  }
+}
+
+.signup {
+  padding: 2rem;
+  &__first-name {
+
+  }
+
+  &__last-name {
+
+  }
+}

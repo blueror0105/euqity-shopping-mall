@@ -1,16 +1,25 @@
 .basic-dropdown-list {
   background-color: white;
-  border: 1px solid gray;
-  animation: 1s ease-in-out 1 slideInFromTop
+  animation: 0.2s ease-in-out 1 slideInFromTop;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  position: absolute;
+  margin-left: -2rem;
 }
 
 .list-title {
   font-size: 1rem;
-  border-bottom: 1px solid gray;
 }
 
 .list-item {
-  border-bottom: 1px solid gray;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: white;
+
+  &:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
 }
 
 @keyframes slideInFromTop {

@@ -4,7 +4,8 @@
   display: flex;
   background-color: white;
   place-items: center;
-
+  font-family: 'roboto-normal-normal';
+  font-size: 0.9rem;
 
   &__section-left {
     margin-left: 2rem;
@@ -15,6 +16,10 @@
     & > p {
       margin-left: 1rem;
       margin-right: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -29,6 +34,8 @@
   }
 
   &__login-signup {
+    display: flex;
+    place-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -39,6 +46,13 @@
   }
 
   &__selected-city {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__language-selector {
+    display: flex;
+    place-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
   }

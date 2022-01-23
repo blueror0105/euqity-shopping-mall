@@ -48,7 +48,7 @@ function Footer(props: any) {
         </section>
       </div>
       <div>
-        Copyright © 2021 TMG Industrial.Privacy PolicyTerms & Conditions
+        Copyright © 2022 TMG Industrial.Privacy PolicyTerms & Conditions
       </div>
     </footer>
   );

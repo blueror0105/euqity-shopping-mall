@@ -1,9 +1,12 @@
 import * as React from "react";
 import Slider from "react-slick";
-
+import Image from "next/image";
 export interface IQuadCarouselProps {}
 
 export default function QuadCarousel(props: IQuadCarouselProps) {
+  /***
+   * SLIDE ONE
+   */
   const settings = {
     dots: true,
     infinite: true,
@@ -11,34 +14,42 @@ export default function QuadCarousel(props: IQuadCarouselProps) {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  const firstSlideItems = [
+    { url: "https://via.placeholder.com/300", alt: "first-image" },
+    { url: "https://via.placeholder.com/300", alt: "second-image" },
+    { url: "https://via.placeholder.com/300", alt: "first-image" },
+  ];
+
+  const getFirstSlideItems = () => {
+    return firstSlideItems.map(item => {
+      return <Image key={item.alt} src={item.url} alt={item.alt} />;
+    });
+  };
+  const FirstSlides = getFirstSlideItems();
+
+  /***
+   * SLIDE TWO
+   */
+  const secondSlideItems = [
+    { url: "https://via.placeholder.com/300", alt: "first-image" },
+    { url: "https://via.placeholder.com/300", alt: "second-image" },
+    { url: "https://via.placeholder.com/300", alt: "first-image" },
+  ];
+
+  const getSecondSlideItems = () => {
+    return firstSlideItems.map(item => {
+      return <Image key={item.alt} src={item.url} alt={item.alt} />;
+    });
+  };
+  const SecondeSlides = getSecondSlideItems();
   return (
     <div className="quad-carousel">
       <div className="quad-carousel__left-section">
-        <Slider {...settings}>
-          <div>
-            <img src={"https://via.placeholder.com/300"} />
-          </div>
-          <div>
-            <img src={"https://via.placeholder.com/300"} />
-          </div>
-          <div>
-            <img src={"https://via.placeholder.com/300"} />
-          </div>
-        </Slider>
+        <Slider {...settings}>{FirstSlides}</Slider>
       </div>
       <div className="quad-carousel__right-section">
         <div className="quad-carousel__second-slider">
-          <Slider {...settings}>
-            <div>
-              <img src={"https://via.placeholder.com/200"} />
-            </div>
-            <div>
-              <img src={"https://via.placeholder.com/200"} />
-            </div>
-            <div>
-              <img src={"https://via.placeholder.com/200"} />
-            </div>
-          </Slider>
+          <Slider {...settings}>{SecondeSlides}</Slider>
         </div>
         <div className="quad-carousel__images">
           <div className="quad-carousel__third-image">

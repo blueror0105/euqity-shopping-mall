@@ -1,0 +1,17 @@
+.product-page {
+  display: flex;
+
+  &__image-section {
+    background-color: red;
+    width: 40%;
+  }
+
+  &__description-section {
+    width: 60%;
+    background-color: yellow;
+  }
+
+  &__product-name {
+
+  }
+}

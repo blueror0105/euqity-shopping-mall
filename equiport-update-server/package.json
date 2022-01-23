@@ -46,7 +46,7 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "prestart": "yarn run build",
+    "prestart": "npm run build",
     "start": "node dist/equiport-update-server.js"
   },
   "author": "",

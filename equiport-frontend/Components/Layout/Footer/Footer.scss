@@ -3,11 +3,16 @@
   color:white;
   background-color: black;
   padding: 1rem;
+  font-family: 'roboto-normal-normal';
 
   &__first-section {
     display: flex;
   }
 
+  & > li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
   &__about-us {
     width: 15%;

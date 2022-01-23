@@ -1,6 +1,7 @@
 import * as React from "react";
 import { RootState } from "../../Store/redux/store";
 import { useSelector, useDispatch } from "react-redux";
+import LoginSignupBar from "./LoginSignupBar/LoginSignupBar";
 import {
   setShowModal,
   setModalContent,
@@ -15,24 +16,9 @@ export default function Modal(props: IModalProps) {
     (state: RootState) => state.modal.modalContent,
   );
 
-  const showHideClassName = showModal
-    ? "modal display-block"
-    : "modal display-none";
-
   const handleClose = () => {
     dispatch(setShowModal(false));
     dispatch(setModalContent("empty"));
-  };
-
-  const LoginSignupBar = () => {
-    return (
-      <div className="loginSignup">
-        username:
-        <input />
-        password:
-        <input />
-      </div>
-    );
   };
 
   const RenderModalElement = () => {
@@ -47,13 +33,16 @@ export default function Modal(props: IModalProps) {
   };
 
   return (
-    <div className={showHideClassName}>
-      <section className="modal-main">
-        <RenderModalElement />
-        <button type="button" onClick={handleClose}>
-          Close
-        </button>
-      </section>
-    </div>
+    <>
+      <div className={showModal ? "overlay" : "no-overlay"} />
+      <div className={showModal ? "modal" : "modal--hidden"}>
+        <section className="modal-main">
+          <RenderModalElement />
+          <button type="button" onClick={handleClose}>
+            Close
+          </button>
+        </section>
+      </div>
+    </>
   );
 }

@@ -32,11 +32,13 @@
 @import '../Components/Buttons/RoundButton/RoundButton.scss';
 @import '../Components/Buttons/StarsRating/StarsRating.scss';
 @import '../Components/Buttons/TalkWithUsButton/TalkWithUsButton.scss';
+@import '../Components/Buttons/QuantityButton/QuantityButton.scss';
 
 /*------------------------------------------------------*/
 /* Modal
 /*------------------------------------------------------*/
 @import '../Components/Modal/Modal.scss';
+@import '../Components/Modal/LoginSignupBar/LoginSignupBar.scss';
 
 /*------------------------------------------------------*/
 /* Carousel
@@ -50,6 +52,7 @@
 @import '../Components/Cards/product-card/product-card.scss';
 @import '../Components/Cards/reviewCard/ReviewCard.scss';
 @import '../Components/Cards/ProductCategoryCard/ProductCategoryCard.scss';
+@import '../Components/Cards/ProductsInCartCard/ProductInCartCard.scss';
 
 /*------------------------------------------------------*/
 /* Dropdown

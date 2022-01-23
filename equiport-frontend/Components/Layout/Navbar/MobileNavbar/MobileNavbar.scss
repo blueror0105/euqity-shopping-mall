@@ -3,6 +3,8 @@
   height: 4rem;
   display: flex;
   place-items: center;
+  border-bottom: 1px solid black;
+  z-index: 3;
 
   &__left-side-wrap {
     margin-left: 1rem;
@@ -13,5 +15,34 @@
     margin-left: auto;
     margin-right: 0rem;
     display: flex;
+  }
+
+  &__product-search-bar {
+    height: 3rem;
+    place-items: center;
+    display: flex;
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+
+    &--hidden {
+      margin-top: -3rem;
+      height: 3rem;
+      place-items: center;
+      display: none;
+      border-bottom: 1px solid black;
+      transition: 0.5s;
+    }
+  }
+
+  &__product-search-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__language-selector {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    place-items: center;
   }
 }

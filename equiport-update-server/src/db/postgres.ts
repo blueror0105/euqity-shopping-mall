@@ -7,19 +7,7 @@ const pool = new Pool({
   password: 'secretpassword',
   port: 3211,
 })
-pool.query('SELECT NOW()', (err: any, res: any) => {
+pool.query("INSERT INTO ", (err: any, res: any) => {
   console.log(err, res)
   pool.end()
-})
-const client = new Client({
-  user: 'dbuser',
-  host: 'database.server.com',
-  database: 'mydb',
-  password: 'secretpassword',
-  port: 3211,
-})
-client.connect()
-client.query('SELECT NOW()', (err: any, res: any) => {
-  console.log(err, res)
-  client.end()
 })

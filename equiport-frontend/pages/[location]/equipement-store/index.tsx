@@ -4,13 +4,13 @@ import ProductTypeCard from "../../../Components/Cards/ProductCategoryCard/Produ
 import productTypes from "../../../Store/hardcoded/product-types";
 import CategorySelect from "../../../Components/Selects/CategorySelect/CategorySelect";
 import { useRouter } from "next/router";
+import hardcodedProduct from "../../../Store/hardcoded/hardcoded-products";
 
 export interface IEquipementStoreProps {}
 
 export default function EquipementStore(props: IEquipementStoreProps) {
   const router = useRouter();
   const { location } = router.query;
-  const ProductsFromMontreal = ["example", "example", "example", "example"];
   console.log(productTypes);
   return (
     <div className="equipement-store">
@@ -27,8 +27,19 @@ export default function EquipementStore(props: IEquipementStoreProps) {
         })}
       </div>
       <div className="equipement-store__products-cards">
-        {ProductsFromMontreal.map(item => {
-          return <ProductCard key={item} title={item} />;
+        {hardcodedProduct.map(item => {
+          return (
+            <ProductCard
+              onClick={() => {
+                /**GO TO PRODUCT PAGE */
+              }}
+              key={item.name}
+              name={item.name}
+              backgroundImage={item.backgroundImage}
+              description={item.description}
+              variants={item.variants}
+            />
+          );
         })}
       </div>
     </div>

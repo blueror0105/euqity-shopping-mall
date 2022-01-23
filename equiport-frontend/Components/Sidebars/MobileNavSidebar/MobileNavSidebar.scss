@@ -2,25 +2,57 @@
 @import './MobileNavSidebarSmallItem/MobileNavSidebarSmallItem.scss';
 
 .unshow-mobile-nav-sidebar {
-  position: absolute;
+  padding: 1rem;
+  position: fixed;
   top:0;
   margin-left: -30rem;
-  width: 30rem;
+  width: 20rem;
   height: 100vh;
   transition: 0.5s;
-  background-color: green;
+  background-color: white;
   z-index: 5;
 }
 
 .mobile-nav-sidebar {
-  width: 30rem;
+  padding: 1rem;
+  width: 20rem;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top:0;
-  background-color: green;
+  background-color: white;
   margin-left: 0rem;
   transition: 0.5s;
   z-index: 5;
+
+  &__logo {
+    font-size: 2rem;
+  }
+
+  &__logo-bar {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &__close-button {
+    display: flex;
+    place-items: center;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 0rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__login-button-wrap {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-left: 3rem;
+  }
 }
 
 .overlay {
@@ -30,5 +62,6 @@
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.7;
   background-color: lightgray;
 }

@@ -16,7 +16,7 @@ export default function ProductSearch(props: IProductSearchProps) {
       <input
         value={searchQuery}
         className="product-search__input"
-        placeholder="what are you looking for ?"
+        placeholder="What are you looking for ?"
         onChange={e => handleSearchChange(e)}
       />
       <button className="product-search__button" onClick={() => onSearch()}>

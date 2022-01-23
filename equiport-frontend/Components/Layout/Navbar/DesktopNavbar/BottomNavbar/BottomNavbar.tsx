@@ -4,20 +4,14 @@ import RoundButton from "../../../../Buttons/RoundButton/RoundButton";
 import LoginSignup from "../../../../Buttons/LoginSignupButton/LoginSignupButton";
 import ProductSearch from "../../../../Inputs/ProductSearchBar/ProductSearchBar";
 import CartButton from "../../../../Buttons/CartButton/CartButton";
-import BasicDropdown from "../../../../Dropdowns/BasicDropdown/BasicDropdown";
 import LanguageButton from "../../../../Buttons/LanguageButton/LanguageButton";
 import CartSidebar from "../../../../Sidebars/CartSidebar/CartSidebar";
+import LocationSwitcher from "../../../../Selects/LocationSwitcher/LocationSwitcher";
 
 export interface IBottomNavbarProps {}
 
 export default function BottomNavbar(props: IBottomNavbarProps) {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cartSidebarOpen, setCartSideOpen] = useState(false);
-  const cities = [[{ description: "Montreal" }], [{ description: "Toronto" }]];
-
-  const selectLocation = (selectedCity: any) => {
-    console.log("selectedCity", selectedCity);
-  };
   const handleCartOpenClose = () => {
     setCartSideOpen(!cartSidebarOpen);
   };
@@ -50,13 +44,7 @@ export default function BottomNavbar(props: IBottomNavbarProps) {
             </div>
           </div>
           <div className="navbar__selected-city">
-            Select city:
-            <BasicDropdown
-              width={"5rem"}
-              list={cities}
-              isListOpen={isDropdownOpen}
-              onSelect={city => selectLocation(city)}
-            />
+            <LocationSwitcher />
           </div>
           <div className="navbar__language-selector">
             <LanguageButton />

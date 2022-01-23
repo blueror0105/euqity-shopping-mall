@@ -1,12 +1,15 @@
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../../Store/redux/store";
 import { useTranslations } from "next-intl";
 
 export interface ITopNavbarProps {}
 export default function TopNavbar(props: ITopNavbarProps) {
   const t = useTranslations("Nav");
+  const location = useSelector((state: RootState) => state.location.location);
   return (
     <div className="top-navbar">
-      <div>current location: Montreal</div>
+      <div>current location: {location}</div>
       <div className="top-navbar__call-us">
         <p>{t("call-us")} at 1800-800-3450</p>
       </div>

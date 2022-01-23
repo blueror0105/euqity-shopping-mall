@@ -12,7 +12,7 @@ export default function LoginSignup(props: ILoginSignupProps) {
 
   const handleClick = (e: any) => {
     e.preventDefault();
-    dispatch(setShowModal(false));
+    dispatch(setShowModal(true));
     dispatch(setModalContent("oauth"));
   };
 

@@ -1,23 +1,23 @@
 import * as React from "react";
 
 export interface IBasicDropdownProps {
-  width: string;
+  // width: string;
   list: any[];
   isListOpen: boolean;
   onSelect: (item: any) => void;
 }
 
 export default function BasicDropdown(props: IBasicDropdownProps) {
-  const { list, width, isListOpen } = props;
+  const { list, isListOpen } = props;
   const handleSelect = (selectedItem: any) => {
     props.onSelect(selectedItem);
   };
-  const style = {
-    width,
-  };
+  // const style = {
+  //   width,
+  // };
   if (isListOpen) {
     return (
-      <div className="basic-dropdown-list" style={style}>
+      <div className="basic-dropdown-list" /*style={style}*/>
         {list.map(item => {
           if (item.title) {
             const { title } = item;

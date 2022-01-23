@@ -12,6 +12,7 @@ export default function MobileNavSidebar(props: IMobileNavSidebarProps) {
   const handleSidebarClose = () => {
     props.onClose();
   };
+
   return (
     <>
       <div className={showMobileNav ? "overlay" : "no-overlay"} />
@@ -20,20 +21,28 @@ export default function MobileNavSidebar(props: IMobileNavSidebarProps) {
           showMobileNav ? "mobile-nav-sidebar" : "unshow-mobile-nav-sidebar"
         }
       >
-        <div
-          onClick={() => {
-            handleSidebarClose();
-          }}
-        >
-          X
+        <div className="mobile-nav-sidebar__logo-bar">
+          <div className="mobile-nav-sidebar__logo">Equiport</div>
+          <div
+            className="mobile-nav-sidebar__close-button"
+            onClick={() => {
+              handleSidebarClose();
+            }}
+          >
+            X
+          </div>
         </div>
         <MobileNavSidebarItem>Search</MobileNavSidebarItem>
         <MobileNavSidebarItem>Shop our products</MobileNavSidebarItem>
-        <MobileNavSidebarItem>
+        <div className="mobile-nav-sidebar__login-button-wrap">
           <LoginSignup />
-        </MobileNavSidebarItem>
+        </div>
         <section className="mobile-nav-sdebar__bottom-section">
-          <MobileNavSidebarSmallItem>locatoin</MobileNavSidebarSmallItem>
+          <MobileNavSidebarSmallItem>Location</MobileNavSidebarSmallItem>
+          <MobileNavSidebarSmallItem>
+            Terms and Condtions
+          </MobileNavSidebarSmallItem>
+          <MobileNavSidebarSmallItem>Marketing</MobileNavSidebarSmallItem>
         </section>
       </div>
     </>

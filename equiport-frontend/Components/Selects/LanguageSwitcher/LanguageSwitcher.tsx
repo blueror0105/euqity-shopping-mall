@@ -17,16 +17,16 @@ export default function LanguageSwitcher(props: ILanguageSwitcherProps) {
         <option selected={locale === "en" ? true : false}>
           <Link href={route} locale="en" passHref>
             <div className="flag-select">
-              dsf
-              <img className="flag" src={FrenchFlag} alt="french-flag" />
+              en
+              {/* <img className="flag" src={FrenchFlag} alt="french-flag" /> */}
             </div>
           </Link>
         </option>
         <option selected={locale === "fr" ? true : false}>
           <Link href={route} locale="fr" passHref>
             <div className="flag-select">
-              adsfs
-              <img className="flag" src={EnglandFlag} alt="england-flag" />
+              fr
+              {/* <img className="flag" src={EnglandFlag} alt="england-flag" /> */}
             </div>
           </Link>
         </option>

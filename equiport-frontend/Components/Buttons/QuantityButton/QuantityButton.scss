@@ -1,0 +1,35 @@
+.quantity-button {
+  display: flex;
+  height: 1.5rem;
+
+  &__add {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    background-color: orange;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border: none;
+    width: 5rem;
+  }
+
+  &__remove {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    background-color: orange;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
