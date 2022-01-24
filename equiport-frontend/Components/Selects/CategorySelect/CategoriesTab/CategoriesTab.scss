@@ -1,0 +1,10 @@
+.categories-tab {
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lightgray;
+  }
+}

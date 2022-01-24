@@ -12,6 +12,12 @@
     flex-wrap: wrap;
   }
 
+  &__select-product-wrap {
+    display: grid;
+    grid-template-columns: 22rem auto;
+    grid-gap: 10px;
+  }
+
   &__products-cards {
     display: flex;
     flex-wrap: wrap;

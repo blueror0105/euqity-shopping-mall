@@ -26,21 +26,25 @@ export default function EquipementStore(props: IEquipementStoreProps) {
           );
         })}
       </div>
-      <div className="equipement-store__products-cards">
-        {hardcodedProduct.map(item => {
-          return (
-            <ProductCard
-              onClick={() => {
-                /**GO TO PRODUCT PAGE */
-              }}
-              key={item.name}
-              name={item.name}
-              backgroundImage={item.backgroundImage}
-              description={item.description}
-              variants={item.variants}
-            />
-          );
-        })}
+      <div className="equipement-store__select-product-wrap">
+        <CategorySelect />
+        <div className="equipement-store__products-cards">
+          {hardcodedProduct.map(item => {
+            return (
+              <ProductCard
+                onClick={() => {
+                  /**GO TO PRODUCT PAGE */
+                }}
+                key={item.name}
+                name={item.name}
+                price={item.price}
+                backgroundImage={item.backgroundImage}
+                description={item.description}
+                variants={item.variants}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

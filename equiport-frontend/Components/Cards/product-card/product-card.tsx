@@ -6,21 +6,23 @@ export interface IProductCardProps {
   name: string;
   description: string;
   variants: any[];
+  price: number;
   backgroundImage: string;
   onClick: () => void;
 }
 
 export default function ProductCard(props: IProductCardProps) {
-  const { name, description, variants, backgroundImage } = props;
+  const { name, description, price, variants, backgroundImage } = props;
   const handleClick = () => {
     props.onClick();
   };
   return (
     <div className="product-card" onClick={() => handleClick()}>
       <div className="product-card__image-placeholder" />
-      <div className="product-card__">
+      <div className="product-card__name-description-wrap">
         <div className="product-card__name">{name}</div>
         <div className="product-card__description">{description}</div>
+        <div className="product-card__price">$ {price}.00</div>
         <QuantityButton />
         <AddToCartButton />
       </div>

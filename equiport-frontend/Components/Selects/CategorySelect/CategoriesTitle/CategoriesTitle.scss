@@ -1,0 +1,16 @@
+.category-title {
+  height: 3rem;
+  width: 90%;
+  padding-left: 5%;
+  margin-left: 5%;
+  text-align: center;
+  display: flex;
+  place-items: center;
+  border-radius: 3px;
+  margin-bottom: 0.1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lightgray;
+  }
+}
