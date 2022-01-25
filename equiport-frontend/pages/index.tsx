@@ -12,6 +12,7 @@ import Slider from "react-slick";
 import Reviews from "../Store/hardcoded/reviews";
 import { ArrowRight, ArrowLeft } from "../Components/Carousels/Arrows/Arrows";
 import deliveryImage from "../Assets/DummyImages/delivery.png";
+import { client } from "../Services/Shopify.Service";
 // appendDots: dots => (
 //   <div
 //     style={{
@@ -35,7 +36,7 @@ import deliveryImage from "../Assets/DummyImages/delivery.png";
 //   </div>
 // )
 
-export default function Index() {
+export default function Index(props: any) {
   const settings = {
     dots: true,
     infinite: true,
@@ -63,6 +64,11 @@ export default function Index() {
     });
   };
   const ReviewsSlides = getReviews();
+  async function one() {
+    const products = await client.product.fetchAll();
+    return products;
+  }
+  console.log("fuck dino", one());
 
   return (
     <div>
@@ -157,7 +163,22 @@ Access your dedicated account manager at all times`}
   );
 }
 
-export function getStaticProps({ locale }: GetStaticPropsContext) {
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  // const gql = String.raw;
+  // const productQuery = gql`
+  //   query Products {
+  //     products(first: 10) {
+  //       edges {
+  //         node {
+  //           title
+  //         }
+  //       }
+  //     }
+  //   }
+  // `;
+  // const response: any = await storefront(productQuery);
+  // const { data } = response;
+  // console.log(data);
   return {
     props: {
       messages: require(`../Locales/${locale}.json`),
