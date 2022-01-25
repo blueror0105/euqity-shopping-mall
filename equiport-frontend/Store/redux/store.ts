@@ -4,6 +4,7 @@ import modalSlice from "./slices/modalSlice";
 import cartSlice from "./slices/cartSlice";
 import locationSlice from "./slices/locationSlice";
 import languageSlice from "./slices/languageSlice";
+import productSlice from "./slices/productSlice";
 
 const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
     cart: cartSlice,
     location: locationSlice,
     language: languageSlice,
+    products: productSlice,
   },
 });
 

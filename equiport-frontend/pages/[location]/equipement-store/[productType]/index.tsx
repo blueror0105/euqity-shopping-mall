@@ -14,7 +14,18 @@ export default function ProductName(props: IProductNameProps) {
       <div className="product-type__product-wrapper">
         {products.map(item => {
           const name = item;
-          return <ProductCard key={name} title={name} />;
+          return (
+            <ProductCard
+              key={name}
+              backgroundImage="https://via.placeholder.com/300"
+              onClick={() =>
+                router.push(
+                  `/montreal/equipement-store/${productType}/${products[0]}`,
+                )
+              }
+              name={name}
+            />
+          );
         })}
       </div>
     </div>

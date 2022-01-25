@@ -1,7 +1,7 @@
 import * as React from "react";
 import ProductInCart from "../../Cards/ProductsInCartCard/ProductInCartCard";
 import { RootState } from "../../../Store/redux/store";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import NormalOverlays from "../../Overlays/NormalOverlays/NormalOverlays";
 
 export interface ICartSidebarProps {

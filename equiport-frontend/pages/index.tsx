@@ -13,6 +13,10 @@ import Reviews from "../Store/hardcoded/reviews";
 import { ArrowRight, ArrowLeft } from "../Components/Carousels/Arrows/Arrows";
 import deliveryImage from "../Assets/DummyImages/delivery.png";
 import { client } from "../Services/Shopify.Service";
+import { RootState } from "../Store/redux/store";
+import { useSelector, useDispatch } from "react-redux";
+import { setCategories, setProducts } from "../Store/redux/slices/productSlice";
+
 // appendDots: dots => (
 //   <div
 //     style={{
@@ -64,11 +68,22 @@ export default function Index(props: any) {
     });
   };
   const ReviewsSlides = getReviews();
-  async function one() {
+  const dispatch = useDispatch();
+  async function getProducts() {
     const products = await client.product.fetchAll();
+    dispatch(setProducts(products));
     return products;
   }
-  console.log("fuck dino", one());
+  async function getCategories() {
+    const collection = await client.collection.fetchAll();
+    dispatch(setCategories(collection));
+    return collection;
+  }
+  getProducts();
+  getCategories();
+  // console.log("collection", getCategories());
+
+  // console.log("get products", getProducts());
 
   return (
     <div>

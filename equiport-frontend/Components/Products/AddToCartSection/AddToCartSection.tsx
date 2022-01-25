@@ -15,7 +15,7 @@ export default function AddToCartSection(props: IAddToCartSectionProps) {
         <div className="add-to-cart__question">Ask a question</div>
       </div>
       <div className="add-to-cart__product-price">5000.99$</div>
-      <div className="add-to-cart__code">SKU TMG SUCKADICK</div>
+      <div className="add-to-cart__code">SKU TMG</div>
       <div className="add-to-cart__quantity">
         <div className="add-to-cart__in-stock">in stock: 5</div>
         <div>
