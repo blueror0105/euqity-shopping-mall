@@ -4,12 +4,14 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 interface IProductState {
   productStore: any[];
   categoryStore: any[];
+  categoriesAndProductsStore: any[];
 }
 
 // Define the initial state using that type
 const initialState: IProductState = {
   productStore: [],
   categoryStore: [],
+  categoriesAndProductsStore: [],
 };
 
 export const productSlice = createSlice({
@@ -20,14 +22,17 @@ export const productSlice = createSlice({
     setProducts: (state, action: PayloadAction<any[]>) => {
       state.productStore = action.payload;
     },
-
     setCategories: (state, action: PayloadAction<any[]>) => {
       state.categoryStore = action.payload;
+    },
+    setCategoriesAndItem: (state, action: PayloadAction<any[]>) => {
+      state.categoriesAndProductsStore = action.payload;
     },
   },
 });
 
-export const { setProducts, setCategories } = productSlice.actions;
+export const { setProducts, setCategories, setCategoriesAndItem } =
+  productSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 

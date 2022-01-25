@@ -15,7 +15,11 @@ import deliveryImage from "../Assets/DummyImages/delivery.png";
 import { client } from "../Services/Shopify.Service";
 import { RootState } from "../Store/redux/store";
 import { useSelector, useDispatch } from "react-redux";
-import { setCategories, setProducts } from "../Store/redux/slices/productSlice";
+import {
+  setCategories,
+  setProducts,
+  setCategoriesAndItem,
+} from "../Store/redux/slices/productSlice";
 
 // appendDots: dots => (
 //   <div
@@ -79,8 +83,16 @@ export default function Index(props: any) {
     dispatch(setCategories(collection));
     return collection;
   }
+  async function getCategoriesAndItems() {
+    const collectionAndItems = await client.collection.fetchAllWithProducts();
+    console.log("collectionAndItems:", collectionAndItems);
+    dispatch(setCategoriesAndItem(collectionAndItems));
+    return collectionAndItems;
+  }
+
   getProducts();
   getCategories();
+  getCategoriesAndItems();
   // console.log("collection", getCategories());
 
   // console.log("get products", getProducts());
@@ -102,6 +114,7 @@ export default function Index(props: any) {
                 key={productType.name}
                 name={productType.name}
                 backgroundImage={productType.bacgroundImage}
+                onClick={() => console.log("hit")}
               />
             );
           })}
@@ -179,21 +192,6 @@ Access your dedicated account manager at all times`}
 }
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  // const gql = String.raw;
-  // const productQuery = gql`
-  //   query Products {
-  //     products(first: 10) {
-  //       edges {
-  //         node {
-  //           title
-  //         }
-  //       }
-  //     }
-  //   }
-  // `;
-  // const response: any = await storefront(productQuery);
-  // const { data } = response;
-  // console.log(data);
   return {
     props: {
       messages: require(`../Locales/${locale}.json`),
