@@ -1,0 +1,24 @@
+.deals-section {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__deals-wrap {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__membership-section {
+    width: 100%;
+    justify-content: center;
+    place-items: center;
+    background-color: blue;
+    margin-top: 2rem;
+    height: 15rem;
+  }
+}
+
+.testing12 {
+  margin: 0 auto;
+}

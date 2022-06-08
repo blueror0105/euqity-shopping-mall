@@ -1,0 +1,12 @@
+.list-categories {
+  border: 1px solid black;
+  display: block;
+  text-align: left;
+  width: 30rem;
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+
+  &__single-categories{
+    padding: 1rem 0rem 1rem 1rem;
+  }
+}

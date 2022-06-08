@@ -20,6 +20,9 @@ import {
   setProducts,
   setCategoriesAndItem,
 } from "../Store/redux/slices/productSlice";
+import IndexLanding from "../PageComponents/Index/IndexLanding/IndexLanding";
+import DealsSection from "../PageComponents/Index/DealsSection/DealsSection";
+import WorkWithUsSection from "../PageComponents/Index/WorkWithUsSection/WorkWithUsSection";
 
 // appendDots: dots => (
 //   <div
@@ -99,28 +102,8 @@ export default function Index(props: any) {
 
   return (
     <div>
-      <QuadCarousel />
-      <section className="product-section">
-        <h1 className="product-section__title">
-          High quality industrial equipments delivered for your business needs
-        </h1>
-        <div className="product-section__subtitle">
-          Over 50 time tested products for your choosing
-        </div>
-        <div className="product-section__card-wrapper">
-          {productTypes.map(productType => {
-            return (
-              <ProductTypeCard
-                key={productType.name}
-                name={productType.name}
-                backgroundImage={productType.bacgroundImage}
-                onClick={() => console.log("hit")}
-              />
-            );
-          })}
-        </div>
-        <ShopNowButton />
-      </section>
+      <IndexLanding />
+      <DealsSection />
       <section className="characteristics-section">
         <div className="characteristics-section__wrap">
           <div className="characteristics-section__icons-descriptions">
