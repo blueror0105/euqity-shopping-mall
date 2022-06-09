@@ -3,16 +3,26 @@ import NormalLayout from "./NormalLayout/NormalLayout";
 import LeftGridLayout from "./LeftGridLayout/LeftGridLayout";
 
 export interface IBlogLayoutProps {
-  BlogLayout: string;
+  blogData: {
+    blogType: string;
+    blogs: { backgroundImage: string; buttonText: string }[];
+  };
 }
 
 export default function BlogLayout(props: IBlogLayoutProps) {
-  const { BlogLayout } = props;
-  switch (BlogLayout) {
+  const { blogData } = props;
+  const { blogs, blogType } = blogData;
+  switch (blogType) {
     case "normal":
-      return <NormalLayout />;
+      return (
+        <NormalLayout
+          backgroundImage={"background image"}
+          buttonText={"Check out this blog"}
+          blogs={blogs}
+        />
+      );
     case "leftgrid":
-      return <LeftGridLayout />;
+      return <LeftGridLayout blogs={blogs} />;
     default:
       return <></>;
   }

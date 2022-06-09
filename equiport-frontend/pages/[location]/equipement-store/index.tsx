@@ -2,8 +2,7 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../Store/redux/store";
-import LeftGridLayout from "../../../Components/BlogLayout/LeftGridLayout/LeftGridLayout";
-import NormalLayout from "../../../Components/BlogLayout/NormalLayout/NormalLayout";
+import BlogLayout from "../../../Components/BlogLayout/BlogLayout";
 
 export interface IEquipementStoreProps {}
 
@@ -17,5 +16,17 @@ export default function EquipementStore(props: IEquipementStoreProps) {
     (state: RootState) => state.products.categoryStore,
   );
   console.log("products", products);
-  return <div className="category-page"></div>;
+  const blogData =  {
+    blogType: string;
+  blogs: {
+      backgroundImage: string;
+      buttonText: string;
+  }[];
+
+  }
+  return (
+    <div className="category-page">
+      <BlogLayout blogData={} />
+    </div>
+  );
 }

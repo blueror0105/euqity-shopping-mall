@@ -89,7 +89,12 @@
 @import '../Components/Lists/ListTrendingCollections/ListTrendingCollection.scss';
 
 /*------------------------------------------------------*/
-/* Normal Layout
+/* Blog Layout
 /*------------------------------------------------------*/
 @import '../Components/BlogLayout/NormalLayout/NormalLayout.scss';
 @import '../Components/BlogLayout/LeftGridLayout/LeftGridLayout.scss';
+
+/*------------------------------------------------------*/
+/* Title Section
+/*------------------------------------------------------*/
+@import '../Components/TitleSections/BasicTitleSection/BasicTitleSection.scss';
