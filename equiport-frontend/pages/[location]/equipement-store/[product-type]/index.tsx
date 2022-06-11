@@ -16,17 +16,7 @@ export default function EquipementStore(props: IEquipementStoreProps) {
     (state: RootState) => state.products.categoryStore,
   );
   console.log("products", products);
-  const blogData =  {
-    blogType: string;
-  blogs: {
-      backgroundImage: string;
-      buttonText: string;
-  }[];
-
-  }
   return (
-    <div className="category-page">
-      <BlogLayout blogData={} />
-    </div>
+    <div className="category-page">{/* <BlogLayout blogData={} /> */}</div>
   );
 }
