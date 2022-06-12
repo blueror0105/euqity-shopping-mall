@@ -1,5 +1,5 @@
 import * as React from "react";
-import ListCategories from "../../../Components/Lists/ListCategories/ListCategories";
+import ListCategories from "../../../Lists/ListCategories/ListCategories";
 import Slider from "react-slick";
 import Image from "next/image";
 

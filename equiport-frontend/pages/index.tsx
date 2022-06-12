@@ -20,9 +20,9 @@ import {
   setProducts,
   setCategoriesAndItem,
 } from "../Store/redux/slices/productSlice";
-import IndexLanding from "../PageComponents/Index/IndexLanding/IndexLanding";
-import DealsSection from "../PageComponents/Index/DealsSection/DealsSection";
-import WorkWithUsSection from "../PageComponents/Index/WorkWithUsSection/WorkWithUsSection";
+import IndexLanding from "../Components/PageComponents/Index/IndexLanding/IndexLanding";
+import DealsSection from "../Components/PageComponents/Index/DealsSection/DealsSection";
+import WorkWithUsSection from "../Components/PageComponents/Index/WorkWithUsSection/WorkWithUsSection";
 
 // appendDots: dots => (
 //   <div
