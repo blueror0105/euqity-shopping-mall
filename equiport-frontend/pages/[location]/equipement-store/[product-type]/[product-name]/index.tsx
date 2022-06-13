@@ -3,45 +3,41 @@ import ProductCard from "../../../../../Components/Cards/product-card/product-ca
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../../Store/redux/store";
+import ProductInfo from "../../../../../Components/PageComponents/ProductName/ProductInfo/ProductInfo";
+import ProductQandA from "../../../../../Components/PageComponents/ProductName/ProductQandA/ProductQandA";
+import ReviewSection from "../../../../../Components/PageComponents/ProductName/ReviewSection/ReviewSection";
 
 export interface IProductNameProps {}
 
 export default function ProductName(props: IProductNameProps) {
-  const router = useRouter();
-  const [products, setProducts] = useState([]);
-  const { productType } = router.query;
-  const allCategoriesAndProducts = useSelector(
-    (state: RootState) => state.products.categoriesAndProductsStore,
-  );
-
-  useEffect(() => {
-    allCategoriesAndProducts.forEach(item => {
-      if (item.handle === productType) {
-        setProducts(item.products);
-      }
-    });
-  }, [allCategoriesAndProducts, productType]);
+  // const router = useRouter();
+  // const [products, setProducts] = useState([]);
+  // const { productType } = router.query;
+  // const allCategoriesAndProducts = useSelector(
+  //   (state: RootState) => state.products.categoriesAndProductsStore,
+  // );
 
   return (
-    <div className="product-type">
-      <div className="product-type__title">Our inventory of {productType}</div>
-      <div className="product-type__product-wrapper">
-        {products.map((item: any) => {
-          return (
-            <ProductCard
-              key={item.title}
-              name={item.title}
-              description={item.description}
-              backgroundImage={item.images[0].src}
-              onClick={() =>
-                router.push(
-                  `/montreal/equipement-store/${productType}/${item.title}`,
-                )
-              }
-            />
-          );
-        })}
+    <div className="product-page">
+      <div className="product-page__image">
+        <Image />
       </div>
+      <>
+        <div>
+          <h1 className="product-page__title"> Title for the product</h1>
+          <div className="product-page__HS-Code">HST title</div>
+          <div className="product-page__ratings">5</div>
+        </div>
+        <div className="product-page__product-select">{/**/}</div>
+      </>
+      <div className="product-page__add-to-cart">
+        <div>increase quantity</div>
+        <div>quantity select</div>
+        <button>add to cart</button>
+      </div>
+      <ProductInfo />
+      <ProductQandA />
+      <ReviewSection />
     </div>
   );
 }

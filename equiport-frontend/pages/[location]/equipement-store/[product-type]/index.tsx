@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../../Store/redux/store";
 import BlogLayout from "../../../../Components/BlogLayout/BlogLayout";
 import ProductSelect from "../../../../Components/Selects/ProductSelects/ProductSelects";
+import ProductCardsHolder from "../../../../Components/PageComponents/Product-type/ProductCardsHolder/ProductCardsHolder";
 
 export interface IEquipementStoreProps {}
 
@@ -20,8 +21,9 @@ export default function EquipementStore(props: IEquipementStoreProps) {
   return (
     <div className="category-page">
       {/* <BlogLayout blogData={} /> */}
-      <div>
+      <div className="category-page__product-section">
         <ProductSelect />
+        <ProductCardsHolder />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import * as React from "react";
 import ProductCard from "../../../Cards/product-card/product-card";
+import PageSelect from "../../../Selects/PageSelect/PageSelect";
 import { useRouter } from "next/router";
 
 export interface IProductCardsHolderProps {}
@@ -32,6 +33,7 @@ export default function ProductCardsHolder(props: IProductCardsHolderProps) {
           />
         );
       })}
+      <PageSelect />
     </div>
   );
 }

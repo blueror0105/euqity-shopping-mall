@@ -3,12 +3,16 @@ import * as React from "react";
 export interface IPageSelectProps {}
 
 export default function PageSelect(props: IPageSelectProps) {
+  const pageCount = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <div className="page-select">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
+      {pageCount.map(count => {
+        return (
+          <div className="page-select__key-count" key={count}>
+            {count}
+          </div>
+        );
+      })}
     </div>
   );
 }
