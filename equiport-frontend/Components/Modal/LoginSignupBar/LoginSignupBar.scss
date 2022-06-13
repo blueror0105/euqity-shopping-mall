@@ -7,17 +7,29 @@
 
   &__content-wrap {
     margin: 0 auto;
+    width: 40rem;
     display: flex;
   }
 }
 
 .login {
   border-right: 1px solid lightgray;
-  padding: 2rem;
-  width: 25rem;
+  width: 20rem;
+  padding-right: 5rem;
+
+  &__email-title {
+    margin-bottom: 1rem;
+  }
 
   &__email {
-    width: 10rem;
+  }
+
+  &__input-email {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 2rem;
+    width: 15rem;
+    margin-bottom: 1rem;
   }
 
   &__password {
@@ -25,30 +37,30 @@
   }
 }
 
-.signup {
-  padding: 2rem;
+.login-with-social {
+  place-items: center;
+}
 
-  &__first-section {
-    display: flex;
+.login-with-google {
+  margin-left: 4rem;
+  width: 12rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
   }
+}
 
-  &__second-section {
-    display: flex;
-  }
+.login-with-linkedin {
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 5px;
 
-  &__first-name {
-    width: 10rem;
-  }
-
-  &__last-name {
-    width: 10rem;
-  }
-
-  &__email {
-    width: 10rem;
-  }
-
-  &__password {
-    width: 10rem;
+  &:hover {
+    cursor: pointer;
   }
 }

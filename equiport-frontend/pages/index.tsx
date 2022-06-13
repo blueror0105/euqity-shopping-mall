@@ -59,6 +59,9 @@ export default function Index(props: any) {
     prevArrow: <ArrowLeft />,
     nextArrow: <ArrowRight />,
   };
+  const products = useSelector(
+    (state: RootState) => state.products.productStore,
+  );
   const getReviews = () => {
     return Reviews.map(item => {
       return (

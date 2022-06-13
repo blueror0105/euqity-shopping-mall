@@ -6,6 +6,7 @@ import {
   setShowModal,
   setModalContent,
 } from "../../Store/redux/slices/modalSlice";
+import SignupStep from "./SignupStep/SignupStep";
 
 export interface IModalProps {}
 
@@ -25,6 +26,10 @@ export default function Modal(props: IModalProps) {
     switch (ModalContent) {
       case "oauth":
         return <LoginSignupBar />;
+      case "signup-step":
+        return <SignupStep />;
+      case "login-step":
+        return <SignupStep />;
       case "empty":
         return <div />;
       default:
@@ -37,10 +42,10 @@ export default function Modal(props: IModalProps) {
       <div className={showModal ? "overlay" : "no-overlay"} />
       <div className={showModal ? "modal" : "modal--hidden"}>
         <section className="modal-main">
+          <div className="modal-main__handle-close" onClick={handleClose}>
+            <div className="modal-main__close-button">x</div>
+          </div>
           <RenderModalElement />
-          <button type="button" onClick={handleClose}>
-            Close
-          </button>
         </section>
       </div>
     </>

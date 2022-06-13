@@ -1,50 +1,50 @@
 import * as React from "react";
+import { useState } from "react";
 import GeneralPurposeButton from "../../Buttons/GeneralPurposeButton/GeneralPurposeButton";
-import Slider from "react-slick";
+import { useDispatch } from "react-redux";
+import { setUsername } from "../../../Store/redux/slices/userSlice";
+import { setModalContent } from "../../../Store/redux/slices/modalSlice";
 
 export interface ILoginSignupBarProps {}
 
 export default function LoginSignupBar(props: ILoginSignupBarProps) {
+  const [email, setEmail] = useState("");
+  const dispatch = useDispatch();
+
+  const ContinueSignup = () => {
+    const signupStepIsLogin = false;
+    const signupStepIsSignup = true;
+
+    if (signupStepIsSignup) {
+      dispatch(setModalContent("signup-step"));
+    } else if (signupStepIsLogin) {
+      dispatch(setModalContent("login-step"));
+    }
+  };
+
   return (
     <div className="loginSignup">
       <div className="loginSignup__content-wrap">
         <section className="login">
           <div className="login__email">
-            Email:
-            <input />
+            <div className="login__email-title">Email:</div>
+            <input
+              value={email}
+              className="login__input-email"
+              onChange={e => {
+                setEmail(e.target.value);
+                dispatch(setUsername(email));
+              }}
+            />
           </div>
-          <div className="login__password">
-            password:
-            <input />
-          </div>
-          <GeneralPurposeButton>Login</GeneralPurposeButton>
+          <GeneralPurposeButton onClick={() => ContinueSignup()}>
+            Login
+          </GeneralPurposeButton>
         </section>
-        <section className="signup">
-          <div className="signup__first-section">
-            <div className="signup__first-name">
-              First name:
-              <input />
-            </div>
-            <div className="signup__last-name">
-              Last name:
-              <input />
-            </div>
-          </div>
-          <div className="signup__second-section">
-            <div className="signup__email">
-              Email:
-              <input />
-            </div>
-            <div className="signup__password">
-              Password:
-              <input />
-            </div>
-          </div>
-          <GeneralPurposeButton>Signup</GeneralPurposeButton>
-          {/* <div className="signup__confirm-password">
-            Confirm password:
-            <input />
-          </div> */}
+        <section className="login-with-social">
+          <button className="login-with-google"> Login with Google</button>
+          <button className="login-with-linkedin"> Login with Linkedin</button>
+          <button className="login-with-linkedin"> Login with Linkedin</button>
         </section>
       </div>
     </div>
