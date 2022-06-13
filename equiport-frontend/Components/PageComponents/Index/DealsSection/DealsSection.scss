@@ -13,10 +13,18 @@
     width: 100%;
     justify-content: center;
     place-items: center;
-    background-color: blue;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     margin-top: 2rem;
     height: 15rem;
   }
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 .testing12 {

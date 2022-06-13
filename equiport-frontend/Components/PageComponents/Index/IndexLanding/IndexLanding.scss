@@ -1,10 +1,14 @@
 .index-landing {
-  width: 100%;
-  display: inline-flex;
+  display: flex;
 }
 
 .landing-slider {
-  width: 100%;
+  width: calc(100% - 20rem);
   height: 40rem;
-  border: 1px solid black;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.landing-slide {
+  height: 40rem;
+  width: 100%;
 }

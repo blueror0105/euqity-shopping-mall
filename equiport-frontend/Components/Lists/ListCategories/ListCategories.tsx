@@ -14,6 +14,8 @@ export default function ListCategories(props: IListCategoriesProps) {
     "party tent",
     "sawhorse",
     "landing-slider",
+    "party tent",
+    "sawhorse",
   ];
   return (
     <div className="list-categories">

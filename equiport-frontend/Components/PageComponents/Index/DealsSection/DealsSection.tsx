@@ -8,24 +8,30 @@ export default function AlertsSection(props: IAlertsSectionProps) {
   return (
     <section className="deals-section">
       <div className="deals-section__deals-wrap">
-        <Image
-          src="http://via.placeholder.com/150x250"
-          alt="first-image"
-          width={400}
-          height={300}
-        />
-        <Image
-          src="http://via.placeholder.com/150x250"
-          alt="second-image"
-          width={400}
-          height={300}
-        />
-        <Image
-          src="http://via.placeholder.com/150x250"
-          alt="third-image"
-          width={400}
-          height={300}
-        />
+        <div className="image-wrapper">
+          <Image
+            src="http://via.placeholder.com/150x250"
+            alt="first-image"
+            width={450}
+            height={320}
+          />
+        </div>
+        <div className="image-wrapper">
+          <Image
+            src="http://via.placeholder.com/150x250"
+            alt="second-image"
+            width={450}
+            height={320}
+          />
+        </div>
+        <div className="image-wrapper">
+          <Image
+            src="http://via.placeholder.com/150x250"
+            alt="third-image"
+            width={450}
+            height={320}
+          />
+        </div>
       </div>
       <div className="deals-section__membership-section">
         <div className="testing12">
