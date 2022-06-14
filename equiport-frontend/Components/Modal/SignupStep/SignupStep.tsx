@@ -31,7 +31,7 @@ export default function SignupStep(props: ISignupStepProps) {
     }));
   };
 
-  const signUp = () => {
+  const signup = () => {
     UserPool.signUp(email, password, [], [], (err, data) => {
       if (err) {
         //dispatch global error

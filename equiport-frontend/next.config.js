@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
+  env: {
+    AWS_COGNITO_ID: "us-east-1_MO5LDHBBF",
+    CLIENT_AWS: "6mcc6qa9cld5ukhb4ja24ualjk"
+  },
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'en',

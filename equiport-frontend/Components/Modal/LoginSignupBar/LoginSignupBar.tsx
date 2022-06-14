@@ -38,7 +38,7 @@ export default function LoginSignupBar(props: ILoginSignupBarProps) {
             />
           </div>
           <GeneralPurposeButton onClick={() => ContinueSignup()}>
-            Login
+            login or signup
           </GeneralPurposeButton>
         </section>
         <section className="login-with-social">
