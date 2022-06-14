@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { RootState } from "../../../Store/redux/store";
 import { useSelector, useDispatch } from "react-redux";
 import { setModalContent } from "../../../Store/redux/slices/modalSlice";
+import UserPool from "../../../Helpers/AwsCognitoUserPool";
 
 export interface ISignupStepProps {}
 
@@ -30,9 +31,17 @@ export default function SignupStep(props: ISignupStepProps) {
     }));
   };
 
+  const signUp = () => {
+    UserPool.signUp(email, password, [], [], (err, data) => {
+      if (err) {
+        //dispatch global error
+      } else console.log(data);
+    });
+  };
+
   return (
     <div className="signup-step">
-      <div>email</div>
+      <div>{userEmail}</div>
       <div>
         First Name
         <input
@@ -53,10 +62,16 @@ export default function SignupStep(props: ISignupStepProps) {
       </div>
       <div>
         Where are you located ?
-        <select name="Cities" id="cars">
-          <option value="Montreal">Montreal</option>
-          <option value="Toronto">Toronto</option>
-          <option value="New York">New York</option>
+        <select name="city" id="cars" value={city}>
+          <option value="Montreal" onChange={e => onChange(e)}>
+            Montreal
+          </option>
+          <option value="Toronto" onChange={e => onChange(e)}>
+            Toronto
+          </option>
+          <option value="New York" onChange={e => onChange(e)}>
+            New York
+          </option>
         </select>
       </div>
       <div>
@@ -70,6 +85,7 @@ export default function SignupStep(props: ISignupStepProps) {
           <label htmlFor="dewey">Not right now</label>
         </div>
       </div>
+      <div onClick={() => signup()}>Signup</div>
     </div>
   );
 }

@@ -10,6 +10,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
     "@shopify/shopify-api": "^2.0.0",
+    "amazon-cognito-identity-js": "^5.2.9",
     "apollo-server": "^3.6.0",
     "dotenv": "^10.0.0",
     "elasticlunr": "^0.9.5",
