@@ -16,6 +16,7 @@ export default function ProductCardsHolder(props: IProductCardsHolderProps) {
       image: "dummyImage",
     },
   ];
+
   return (
     <div className="product-card-holder">
       {products.map((item: any) => {
