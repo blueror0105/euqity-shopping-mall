@@ -81,6 +81,7 @@ export default function Index(props: any) {
   const dispatch = useDispatch();
   async function getProducts() {
     const products = await client.product.fetchAll();
+    console.log("Products: ", products);
     dispatch(setProducts(products));
     return products;
   }
@@ -99,9 +100,6 @@ export default function Index(props: any) {
   getProducts();
   getCategories();
   getCategoriesAndItems();
-  // console.log("collection", getCategories());
-
-  // console.log("get products", getProducts());
 
   return (
     <div>
